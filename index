@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع معلم اللغة العربية</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>مرحباً بك في موقع معلم اللغة العربية</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">عن الموقع</a></li>
+                    <li><a href="#">خدماتنا</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>تعلم اللغة العربية بأسلوب متميز</h2>
+            <p>استمتع بتجربة تعليمية رائعة معنا</p>
+            <a href="#" class="btn">تعرف على المزيد</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <div class="feature-item">
+                <h3>دروس تفاعلية</h3>
+                <p>نقدم دروسًا تفاعلية تجعل تعلم اللغة العربية ممتعًا وشيقًا.</p>
+            </div>
+            <div class="feature-item">
+                <h3>مواد تعليمية متميزة</h3>
+                <p>نوفر مواد تعليمية غنية ومصادر متنوعة لتحسين مهاراتك اللغوية.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>حقوق النشر © 2024. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+</body>
+</html>
