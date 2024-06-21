@@ -163,7 +163,7 @@ footer p {
     margin: 0;
 }
 
-/* زخرفة للهيدر */
+/* زخرفة للهيدر 
 .header::after {
     content: "";
     display: block;
@@ -181,7 +181,7 @@ footer p {
     z-index: 2;
 }
 
-/* زخرفة للميزات 
+ زخرفة للميزات 
 .features::before,
 .features::after {
     content: "";
@@ -196,9 +196,10 @@ footer p {
         transparent 20px
     );
     top: 0;
-}*/
+}
 
 .features::after {
     top: auto;
     bottom: 0;
 }
+*/
