@@ -1,5 +1,3 @@
-ent 20px
-    );
 /* Reset CSS */
 * {
     margin: 0;
@@ -23,45 +21,76 @@ body {
 }
 
 header {
-    background-color: #384d4e;
+    background-color: #384d4e; /* لون خلفية الهيدر */
     color: #fff;
     padding: 20px 0;
     text-align: center;
     position: relative;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav ul {
-    list-style-type: none;
+header .logo {
+    max-width: 150px;
+}
+
+header .contact-btn {
+    background-color: #7d8275;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+header .contact-btn:hover {
+    background-color: #b6bdb8;
+}
+
+nav.navbar {
+    background-color: #7d8275;
     padding: 10px;
-    background-color: #7d8275; /* لون خلفية التنقل */
-    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-nav ul li {
-    display: inline-block;
-    margin-left: 20px;
+nav.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
 }
 
-nav ul li a {
+nav.navbar ul li {
+    margin: 0;
+}
+
+nav.navbar ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2em;
-    padding: 10px 15px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-nav ul li a:hover {
-    background-color: #b6bdb8; /* لون الخلفية عند التحويم */
-    border-radius: 5px;
+nav.navbar ul li a i {
+    font-size: 1.5em;
+}
+
+nav.navbar ul li a:hover {
+    color: #b6bdb8;
 }
 
 .hero {
-    background-color: #7d8275;
+    background-color: #7d8275; /* لون خلفية البطل */
     color: #fff;
     padding: 100px 0;
     text-align: center;
@@ -80,7 +109,7 @@ nav ul li a:hover {
 
 .hero .btn {
     display: inline-block;
-    background-color: #384d4e;
+    background-color: #384d4e; /* لون خلفية الزر */
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -93,26 +122,22 @@ nav ul li a:hover {
 }
 
 .features {
-    background-color: #dfe0da;
+    background-color: #dfe0da; /* لون خلفية الميزات */
     padding: 80px 0;
     text-align: center;
-    background: linear-gradient(45deg, #b6bdb8 25%, transparent 25%) -50px 0,
-                linear-gradient(135deg, #b6bdb8 25%, transparent 25%) -50px 0,
-                linear-gradient(45deg, transparent 75%, #b6bdb8 75%),
-                linear-gradient(135deg, transparent 75%, #b6bdb8 75%);
-    background-size: 100px 100px;
+    position: relative;
 }
 
 .features h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #384d4e;
+    color: #384d4e; /* لون النص */
 }
 
 .feature-item {
     margin-bottom: 40px;
     padding: 20px;
-    background-color: #b6bdb8;
+    background-color: #b6bdb8; /* لون خلفية العنصر */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -124,11 +149,11 @@ nav ul li a:hover {
 
 .feature-item p {
     font-size: 1.1em;
-    color: #384d4e;
+    color: #384d4e; /* لون النص */
 }
 
 footer {
-    background-color: #384d4e;
+    background-color: #384d4e; /* لون خلفية الفوتر */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -138,8 +163,8 @@ footer p {
     margin: 0;
 }
 
-/* الزخارف */
-.hero::after {
+/* زخرفة للهيدر */
+.header::after {
     content: "";
     display: block;
     position: absolute;
@@ -151,17 +176,12 @@ footer p {
     z-index: 1;
 }
 
-.hero .container {
+.header .container {
     position: relative;
     z-index: 2;
 }
 
-/* زخرفة عربية */
-.features {
-    position: relative;
-    overflow: hidden;
-}
-
+/* زخرفة للميزات */
 .features::before,
 .features::after {
     content: "";
@@ -181,19 +201,4 @@ footer p {
 .features::after {
     top: auto;
     bottom: 0;
-}
-
-.header-decoration {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 10px;
-    background: repeating-linear-gradient(
-        -45deg,
-        #fff,
-        #fff 10px,
-        transparent 10px,
-        transparent 20px
-    );
 }
