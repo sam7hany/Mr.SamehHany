@@ -137,7 +137,7 @@ nav.navbar ul li a:hover {
 .feature-item {
     margin-bottom: 40px;
     padding: 20px;
-    background-color: #b6bdb8; /* لون خلفية العنصر */
+    background-color: #b1b1b1; /* لون خلفية العنصر */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -181,7 +181,7 @@ footer p {
     z-index: 2;
 }
 
-/* زخرفة للميزات */
+/* زخرفة للميزات 
 .features::before,
 .features::after {
     content: "";
@@ -196,7 +196,7 @@ footer p {
         transparent 20px
     );
     top: 0;
-}
+}*/
 
 .features::after {
     top: auto;
